@@ -149,6 +149,15 @@
   .src{font-size:.8rem;color:var(--mut);max-width:520px}
   .copy{margin-top:30px;font-size:.78rem;color:#8a8ab0}
 
+  .freebox{display:flex;gap:12px;align-items:flex-start;margin-top:16px;padding:14px 16px;border-radius:16px;border:1px solid rgba(124,196,255,.35);background:rgba(124,196,255,.07);font-size:.92rem;max-width:560px}
+  .freebox b{color:var(--lime)}
+  .freebox small{display:block;color:var(--mut);font-size:.8rem;margin-top:4px}
+  .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px}
+  .tcard{border-radius:var(--radius);padding:26px;border:1px solid var(--line);background:var(--card)}
+  .tcard h3{font-size:1.1rem;margin-bottom:8px}
+  .tcard p{color:var(--mut);font-size:.95rem;margin-bottom:8px}
+  .tcard .honest{color:var(--warn);font-size:.88rem}
+  @media (max-width:760px){.trust{grid-template-columns:1fr}}
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -194,7 +203,8 @@
         <a class="btn btn-primary" href="#join">Start your fundraiser →</a>
         <a class="btn btn-ghost" href="#know">Read the fine print</a>
       </div>
-      <p class="hero-note">Free to download · Android on Google Play, iOS beta on TestFlight · 18+ only</p>
+      <p class="hero-note">Free to download · Android on Google Play, iPhone via Apple TestFlight beta (not yet a full App Store release) · 18+ only</p>
+      <div class="freebox"><span>🎁</span><div><b>Free to start:</b> the app is free to download, and no token purchase is required to download or join. There's also a free 500 PX1 airdrop for completing tasks in PowerX's official Telegram bot (join the chat, follow on X, etc.) and verifying in the app. No purchase or deposit required.<small>Airdrop rewards are distributed at the token generation event, which has no announced date. At the $0.0002 presale price, 500 PX1 is worth about $0.10, and its value isn't guaranteed.</small></div></div>
     </div>
     <div class="phone" aria-hidden="true">
       <div class="notch"></div>
@@ -289,6 +299,18 @@
   </div>
 </section>
 
+<section id="trust">
+  <div class="wrap">
+    <span class="eyebrow">Trust &amp; fine print</span>
+    <h2 class="section-title">What's been checked, and what hasn't</h2>
+    <p class="lead">Independent listings worth knowing about, with honest caveats.</p>
+    <div class="trust">
+      <div class="tcard reveal"><h3>🛡️ CertiK security audit</h3><p>CertiK audited the PowerX OneWallet app, completed August 21, 2026: 14 findings, 0 critical, 12 resolved.</p><p><a href="https://skynet.certik.com/projects/powerxone" target="_blank" rel="noopener">View on CertiK Skynet →</a></p><p class="honest">Honest note: CertiK lists the team as not verified. An audit reviews code; it isn't a guarantee of safety or value.</p></div>
+      <div class="tcard reveal"><h3>📊 CoinMarketCap preview page</h3><p>PowerX One is listed on CoinMarketCap as a preview page.</p><p><a href="https://coinmarketcap.com/currencies/powerx-one/" target="_blank" rel="noopener">View on CoinMarketCap →</a></p><p class="honest">Honest note: a preview page means the token has not launched and is not trading yet. It is not an exchange listing.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="join">
   <div class="wrap">
     <div class="cta-box">
@@ -319,7 +341,7 @@
     <div class="faq">
       <details>
         <summary>What exactly is powerx.one?</summary>
-        <p>powerx.one calls itself “the self-custodial wallet where your community pays you.” It's a mobile app that combines a multi-chain crypto wallet with live audio and video rooms (which it calls “Call”), tipping, and chat, with a social feed and music on its roadmap. Its own token is called PX1. Android is on Google Play and iOS is a TestFlight beta.</p>
+        <p>powerx.one calls itself “the self-custodial wallet where your community pays you.” It's a mobile app that combines a multi-chain crypto wallet with live audio and video rooms (which it calls “Call”), tipping, and chat, with a social feed and music on its roadmap. Its own token is called PX1. Android is on Google Play; on iPhone it's available through an Apple TestFlight beta (not yet a full App Store release). CertiK completed a security audit of the PowerX OneWallet app on August 21, 2026 (14 findings, 0 critical, 12 resolved), though CertiK lists the team as not verified.</p>
       </details>
       <details>
         <summary>Who can sign up?</summary>
@@ -327,7 +349,7 @@
       </details>
       <details>
         <summary>Does it cost anything?</summary>
-        <p>The app is free to download. The dashboard the link opens also sells the PX1 token. Buying tokens is optional and isn't needed to host rooms or receive tips. If you or your group ever do buy, powerx.one's terms say purchases are final and non-refundable, and blockchain network fees may apply to some transactions.</p>
+        <p>The app is free to download, and no token purchase is required to download or join. There's also a free 500 PX1 airdrop for completing tasks in PowerX's official Telegram bot and verifying in the app, with no purchase or deposit required. Airdrop rewards are distributed at the token generation event, which has no announced date; at the $0.0002 presale price, 500 PX1 is worth about $0.10, and value isn't guaranteed. The dashboard the link opens also sells the PX1 token. Buying tokens is optional and isn't needed to host rooms or receive tips. If you or your group ever do buy, powerx.one's terms say purchases are final and non-refundable, and blockchain network fees may apply to some transactions.</p>
       </details>
       <details>
         <summary>Can we turn what we raise into cash for our club?</summary>
